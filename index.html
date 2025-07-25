@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Amanda Sokolowski">
+  <title>Bear Ninja Hunter</title>
+</head>
+<body>
+  <p id="result"></p>
+
+  <script type="text/javascript">
+    // 1. prompt for player’s name
+    let playerName = prompt('Welcome to Bear Ninja Hunter! What is your name?');
+
+    // 2. greet player
+    alert(`Hello, ${playerName}!`);
+
+    // 3. prompt for player’s choice
+    let playerChoice = prompt('Enter your choice: Bear, Ninja, or Hunter');
+
+    // 4. hard‑code computer’s choice
+    const computerChoice = 'Bear';
+
+    // 5. build and log result
+    let message = `${playerName} picked ${playerChoice} and computer picked ${computerChoice}.`;
+    console.log(message);
+
+    // 6. display result on page
+    document.getElementById('result').innerHTML = message;
+  </script>
+</body>
+</html>

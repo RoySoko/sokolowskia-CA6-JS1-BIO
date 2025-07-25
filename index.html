@@ -9,23 +9,23 @@
   <p id="result"></p>
 
   <script type="text/javascript">
-    // 1. prompt for player’s name
-    let playerName = prompt('Welcome to Bear Ninja Hunter! What is your name?');
+    // Ask for player’s name
+    let playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started:');
 
-    // 2. greet player
-    alert(`Hello, ${playerName}!`);
+    //  Greet player
+    alert(`Hi ${playerName}! Let\'s Play!!`);
 
-    // 3. prompt for player’s choice
-    let playerChoice = prompt('Enter your choice: Bear, Ninja, or Hunter');
+    // Ask for player’s choice
+    let playerChoice = prompt('Who are you Bear, Ninja, or Hunter');
 
-    // 4. hard‑code computer’s choice
+    // The omputer’s choice
     const computerChoice = 'Bear';
 
-    // 5. build and log result
-    let message = `${playerName} picked ${playerChoice} and computer picked ${computerChoice}.`;
+    // combine and show results
+    let message = `${playerName}, you picked ${playerChoice}! The computer picked ${computerChoice}!`;
     console.log(message);
 
-    // 6. display result on page
+    // Show results on page on page
     document.getElementById('result').innerHTML = message;
   </script>
 </body>
